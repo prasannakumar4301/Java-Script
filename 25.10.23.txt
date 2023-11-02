@@ -1,0 +1,61 @@
+Javascript: 
+
+> JavaScript (/ˈdʒɑːvəskrɪpt/), often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS.
+> As of 2023, 98.7% of websites use JavaScript on the client side for webpage behavior,[10] often incorporating third-party libraries.
+> All major web browsers have a dedicated JavaScript engine to execute the code on users' devices.
+> JavaScript is a high-level, often just-in-time compiled language that conforms to the ECMAScript standard.
+
+Major Javascript Implementations:
+
+V8 - Chrome
+JavascriptCore - Safari
+SpiderMonkey - Mozilla Firefox
+Chakra - Edge
+
+*.js
+
+We can have javascript source code either in html file or seperate js file.
+
+> Internal JS
+> External JS
+
+<script>
+    // JS Source code...
+
+</script>
+
+External JS:
+
+
+fileName.js
+
+
+<script src="relativePathOfJS"></script>
+
+Output Parameters:
+document.getElementById(id).innerHTML = value;
+console.log(value);
+window.alert(value);
+
+Variables: Used to store the data temporarily.
+
+    Syntax:
+
+        var variableName = value;
+
+
+    For retrieving value present in variable
+
+        variableName
+
+Data Types: A particular kind of data item, as defined by the values it can take, the programming language used, or the operations that can be performed on it.
+
+Predefined:
+String
+Boolean
+Number
+
+Userdefined:
+Array
+Object
+Function

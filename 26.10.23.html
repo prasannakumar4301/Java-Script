@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .meeting {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .meeting > div {
+            text-align: center;
+            width: 33.3%;
+        }
+    </style>
+</head>
+<body>
+    <!-- <h2 id="meeting-name"></h2> -->
+    <div class="meetings">
+        <div class="meeting">
+            <div>
+                <h3 id="typeofmeeting"></h3>
+            </div>
+            <div>
+                <h2 id="meetingname"></h2>
+                <p>Meeting Id: <span id="meetingId"></span></p>
+            </div>
+            <div>
+                <button>Start</button>
+                <button>Edit</button>
+                <button>Delete</button>
+            </div>
+        </div>
+        <div class="meeting">
+            <div>
+                <h3 id="typeofmeeting2"></h3>
+            </div>
+            <div>
+                <h2 id="meetingname2"></h2>
+                <p>Meeting Id: <span id="meetingId2"></span></p>
+            </div>
+            <div>
+                <button>Start</button>
+                <button>Edit</button>
+                <button>Delete</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var isUserActive = true;
+        console.log(typeof isUserActive);
+
+        isUserActive = 2100;
+        console.log(typeof isUserActive);
+
+        var userName = 'prasanna4301';
+        console.log(typeof userName);
+
+        var meetingName = ['Meeting-1', 'Meeting-2', 'Meeting-3', 'Meeting-4'];
+        console.log(meetingName[2]);
+
+        // document.getElementById('meeting-name').innerHTML = meetingName[3];
+
+        meetingName.push('Meeting-5');
+        console.log(meetingName);
+
+        meetingName[2] = 'Meeting-3.1';
+        console.log(meetingName);
+
+        userInfo = {
+            name: 'Prasanna Kumar',
+            designation: 'Software Engineer',
+            salary: '30000'
+        };
+        console.log(userInfo['name']);
+
+        var meeting1 = {
+            name: 'Meeting-1',
+            id: '816 6439 6272'
+        };
+
+        var meetings = [
+            {
+                name: 'Meeting-1',
+                id: '816 6439 6272',
+                isRecurring: true
+            },
+            {
+                name: 'Meeting-2',
+                id: '816 6439 6273',
+                isRecurring: false
+            },
+            {
+                name: 'Meeting-3',
+                id: '816 6439 6274',
+                isRecurring: true
+            },
+            {
+                name: 'Meeting-4',
+                id: '816 6439 6275',
+                isRecurring: false
+            }
+        ];
+
+        console.log(meetings[1].id);
+
+        document.getElementById('typeofmeeting').innerHTML = meetings[0].isRecurring ? 'Recurring' : 'Once';
+        document.getElementById('meetingname').innerHTML = meetings[0].name;
+        document.getElementById('meetingId').innerHTML = meetings[0].id;
+    
+        document.getElementById('typeofmeeting2').innerHTML = meetings[1].isRecurring ? 'Recurring' : 'Once';
+        document.getElementById('meetingname2').innerHTML = meetings[1].name;
+        document.getElementById('meetingId2').innerHTML = meetings[1].id;
+    
+
+
+
+
+
+    </script>
+
+
+
+</body>
+</html>
