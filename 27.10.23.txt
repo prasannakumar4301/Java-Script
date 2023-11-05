@@ -1,0 +1,50 @@
+Operators:
+Arithmetic Operators
+Assignment Operators
+Comparison Operators
+Logical Operators
+
+Arithmetic Operators:
++ - Addition
+- - Subtraction
+* - Multiplication
+/ - Division
+% - Modulus
+++ - Increment (It takes current value as an input and increments the value by 1)
+-- - Decrement (It takes current value as an input and decrements the value by 1)
+
+Syntax:
+
+    variableName++ (variableName = variableName + 1)
+
+    variableName-- (variableName = variableName - 1)
+
+    It takes value present in variableName, adds the variableName value with 1. Later it updates the value of the variableName.
+
+Assignment Operators (Shorthand Operators):
+= - Assigns right side value to the left side variable
++= - a += b // a = a + b
+-= - a -= b // a = a - b
+*= - a *= b // a = a * b
+/= - a /= b // a = a / b
+%= - a %= b // a = a % b
+
+Comparison Operators
+== - Double equal to
+=== - Triple equal to
+!= - Not equal
+!== - Not Double equal
+> - Greater than
+< - Less than
+>= - Greater than or equal to 
+<= - Less than or equal to
+? - ternary
+
+    Syntax:
+
+        condition ? true statement : false statement
+
+Logical Operators
+&& - Logical AND - If all the conditions are true, it returns true.
+|| - Logical OR - If any of the condition is true, it returns true.
+! - Logical Not - If current value is true, it returns false.

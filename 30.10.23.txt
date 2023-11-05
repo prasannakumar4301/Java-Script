@@ -1,0 +1,25 @@
+Functions: A function is a block of source code, which will be executed when we call it.
+
+    Syntax:
+
+        function functionName(arg1, arg2, ..., argN) {
+
+            // Block of source code...
+
+        } - Function Definition
+
+        functionName(value1, value2, ..., valueN); - Function Call
+
+Function definition will be called or executed when we call it.
+
+return: Used to return the value from function definition to the function call.
+
+Events: User interactions to the application.
+
+onclick
+
+    Syntax:
+
+        <button onclick="functionName()"></button>
+
+onchange: 

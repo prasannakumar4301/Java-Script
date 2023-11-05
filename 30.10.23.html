@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <label>Number1</label>
+        <input type="number" placeholder="Number1" id="num1"/>
+    </div>
+    <div>
+        <label>Number2</label>
+        <input type="number" placeholder="Number2" id="num2"/>
+    </div>
+    <button onclick="CalculateSum()">Sum</button>
+    <button onclick="CalculateDifference()">Difference</button>
+    <button onclick="CalculateProduct()">Multiply</button>
+
+    <h4>Result: <span id="result"></span></h4>
+
+    <script>
+        function CalculateSum() {
+            var num1 = document.getElementById('num1').value;
+            var num2 = document.getElementById('num2').value;
+            num1 = parseInt(num1);
+            num2 = parseInt(num2);
+            
+            var sum = num1 + num2;
+            console.log(sum);
+            document.getElementById('result').innerHTML = sum;
+        }
+
+        function CalculateDifference() {
+            var num1 = document.getElementById('num1').value;
+            var num2 = document.getElementById('num2').value;
+            num1 = parseInt(num1);
+            num2 = parseInt(num2);
+            
+            var difference = num1 - num2;
+            console.log(difference);
+            document.getElementById('result').innerHTML = difference;
+        }
+
+        function CalculateProduct() {
+            var num1 = document.getElementById('num1').value;
+            var num2 = document.getElementById('num2').value;
+            num1 = parseInt(num1);
+            num2 = parseInt(num2);
+            
+            var product = num1 * num2;
+            console.log(product);
+            document.getElementById('result').innerHTML = product;
+        }
+
+        function getEmployee(empId) {
+            var emps = [
+                {
+                    id: 1,
+                    name: 'Luffy'
+                },
+                {
+                    id: 2,
+                    name: 'Zoro'
+                },
+                {
+                    id: 3,
+                    name: 'Sanji'
+                }
+            ];
+            var filterEmployee;
+            filterEmployee = emps[0].id === empId ? emps[0] : false;
+            return filterEmployee ;
+        }
+
+        var result = getEmployee(1);
+        console.log(result);
+
+
+       
+
+    </script>
+</body>
+</html>
