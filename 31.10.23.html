@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label>Mobile No. </label>
+    <input placeholder="Enter Mobile NO. " id="mobileNo"/>
+    <p id="message"></p>
+    <button onclick="validateMobileNo(successCallback, failureCallback)">Continue</button>
+    <script>
+         var user = {
+            firstName: 'Prasanna',
+            lastName: 'Kumar',
+            mobileNos: [7702509243, 6281511367],
+            dob: '2001-11-06T04:58:30.463Z',
+            address: {
+                plotNo: 11-127,
+                area: 'Enikepadu',
+                city: 'Vijayawada',
+                state: 'Andhra Pradesh',
+                pinCode: 521108
+            },
+            isLoggedIn: false,
+            getFullName: function() {
+                return 'Mr.' + this.firstName + ' ' + this.lastName;
+            },
+            getFormattedDate: function() {
+                var dateObj = new Date(this.dob);
+                return dateObj.getDate() + '/' + (dateObj.getMonth() + 1) + '/' + dateObj.getFullYear();
+            }
+         };
+         console.log(user.getFormattedDate());
+
+         (function() {
+            console.log('In self invoking function');
+         })();
+
+
+         var dbMobileNo = 7702509243;
+        //  var userMobileNo = 7702509243;
+         function successCallback() {
+            console.log('In success callabck');
+            window.location.href = './dashboard.html';
+         }
+         function failureCallback() {
+            console.log('In failure callback');
+            document.getElementById('message').innerHTML = 'Incorrect Mobile NO. ';
+         }
+         function validateMobileNo(successCallback, failureCallback) {
+            var userMobileNo = document.getElementById('mobileNo').value;
+            parseInt(userMobileNo) === dbMobileNo ? successCallback() : failureCallback();
+         }
+        //  validateMobileNo(successCallback, failureCallback);
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+Types of Functions:
+
+1. Function Constructor
+2. Anonymous Function: A function which doesn't has name is called as anonymous function.
+
+            Syntax:
+
+                var variableName = function(arg1, arg2, ... argN) {
+
+                };
+
+3. Self Invoking Function: A function which is invoked by itself.
+
+    Syntax:
+
+        (function() {
+            // logic...
+        })();
+
+Eg: Loading information on load of the page.
+
+4. Callback Function: A function which is passed as a parameter/argument to another function.
+
+    Syntax:
+
+        function functionName() {
+
+        }
+
+        function functionName2(functionName) {
+            console.log(functionName)
+        }
+
+        functionName2(functionName);
+
+
+20/10/2023
+
+10/20/23
+
+10/20/2023
+
+20-10-2023
+
+Login:
+
+    Email:
+
+    Password:
+
+        Login
+
+
+
+    var user = {};
