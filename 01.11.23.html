@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #logOutContent {
+            display: block;
+        }
+        #logInContent {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="logOutContent">
+        <ul>
+            <li>Contact Sales</li>
+            <li>Sign up Free</li>
+        </ul>
+    </div>
+    <div id="logInContent">
+        <ul>
+            <li>Schedule</li>
+            <li>Join</li>
+            <li>Host</li>
+            <li>Web App</li>
+        </ul>
+    </div>
+    <button onclick="toggleContent()">Toggle Content</button>
+
+    <div>
+        <label>Password</label>
+        <input type="password" placeholder="Enter Password" id="password" /><i id="password-icon" onclick="togglePasswordIcon()" class="fa-solid fa-eye"></i>
+    </div>
+
+    <script>
+        var isLoggedIn = false;
+        function toggleContent() {
+            if(isLoggedIn) {
+                document.getElementById('logOutContent').style.display = 'block';
+                document.getElementById('logInContent').style.display = 'none';
+            }else {
+                document.getElementById('logOutContent').style.display = 'none';
+                document.getElementById('logInContent').style.display = 'block';
+            }
+            isLoggedIn = !isLoggedIn;
+        }
+
+        var isPasswordVisible = false;
+        function togglePasswordIcon() {
+            if(isPasswordVisible){
+                document.getElementById('password').type = 'password';
+                document.getElementById('password-icon').classList .add('fa-eye-slash');
+                document.getElementById('password-icon').classList .remove('fa-eye');
+            }else {
+                document.getElementById('password').type = 'text';
+                document.getElementById('password-icon').classList .add('fa-eye');
+                document.getElementById('password-icon').classList .remove('fa-eye-slash');
+            }
+            isPasswordVisible = !isPasswordVisible
+        }
+    </script>
+
+    <script src="https://kit.fontawesome.com/5a01ad0bd1.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+Conditional Statements: Statements will be executed conditionally based the scenarios.
+
+    if else: Using this we can mention multiple conditions and based that Statements can be executed.
+
+    switch: One condition with multiple case
+
+    Syntax:
+
+        if (condition) {
+            // Statements...
+        } else {
+            // Statements...
+        }
+
+    if condition is true, statements present in if block will be executed.
+    if condition is falsem statements present in else block will be executed
+
+        if (condition) {
+            // Statements...
+        } else if (condition) {
+            // Statements...
+        } else if (condition) {
+            // Statements...
+        } else {
+            // Statements...
+        }
+
+    Switch:
+
+For form fields .type .value
+For static tags - header, paragraph, etc - .innerHTML
+For applying stylings directly - .style
+For applying classes - .classList
